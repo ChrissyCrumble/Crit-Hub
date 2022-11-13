@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="images.png">
+        <title>CritHub</title>
+
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+        <script>
+            function write_text(parent, content)
+            {
+                content.forEach(
+                    highlight => {
+                        let span = document.createElement("span");
+                        span.appendChild(document.createTextNode(highlight[1]));
+                        span.className = highlight[0];
+
+                        parent.appendChild(span);
+                    }
+                );
+            };
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+        <div class="container">
+            <span style="font-size: 5em;">Crit Hub</span>
+            <span style="font-size: 1em; margin-bottom: 7px;">Clearly the best roblox script.</span>
+            <div style="position: relative">
+                <div class="script-line" style="z-index: -1"></div>
+                <div class="script-container">
+                
+                    <div class="seperator"></div>
+                    
+                    <div class="script-item">
+                        <span class="script-title">CritHub</span>
+                        <div class="script-content" id="recoil">
+                            <script>
+                                write_text(
+    document.getElementById("recoil"), 
+    [
+
+        ["library", "loadstring"],
+        ["punctuation", "("],
+        ["variable", "game:HttpGet"],
+        ["string", `"https://raw.githubusercontent.com/0xd5f/BCW-Script/main/Recoil.lua"`],
+        ["variable", "))();"],
+    ]
+);
+                            </script>
+                        </div>
+                    </div>
+
+                    <div class="seperator"></div>
+
+                            </script>
+                        </div>
+                    </div>
+          <span style="font-size: 2em; margin-bottom: 16px;">What is CritHub?</span>
+          <span style="font-size: 1em; margin-bottom: 16px;">CritHub is a Roblox "aim assist" script for people with bad aim, But me and my team (me) are planning to support many Roblox games. to ruin other peoples fun and to get a advantage.</span>
+          <span style="font-size: 2em; margin-bottom: 16px;">Can you get banned?</span>
+          <span style="font-size: 1em; margin-bottom: 16px;">Yes, Well kinda its SUPER rare to get banned unless you are going full rage or trying to get banned.</span>
+        
+                   
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
