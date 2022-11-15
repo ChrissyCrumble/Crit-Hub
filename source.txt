@@ -1,0 +1,132 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CritHub = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Title_2 = Instance.new("TextLabel")
+local MainTAB = Instance.new("TextButton")
+local MainTab = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
+
+--Properties:
+
+CritHub.Name = "CritHub"
+CritHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+CritHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+CritHub.Active = true
+CritHub.Draggable = true
+
+Main.Name = "Main"
+Main.Parent = CritHub
+Main.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Main.Position = UDim2.new(0.360499263, 0, 0.358024716, 0)
+Main.Size = UDim2.new(0, 380, 0, 230)
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Title.Size = UDim2.new(0, 48, 0, 38)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "Crit"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 25.000
+
+Title_2.Name = "Title"
+Title_2.Parent = Main
+Title_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Title_2.Position = UDim2.new(0.113157891, 0, 0, 0)
+Title_2.Size = UDim2.new(0, 48, 0, 38)
+Title_2.Font = Enum.Font.Cartoon
+Title_2.Text = "Hub"
+Title_2.TextColor3 = Color3.fromRGB(255, 85, 0)
+Title_2.TextSize = 25.000
+
+MainTAB.Name = "MainTAB"
+MainTAB.Parent = Main
+MainTAB.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+MainTAB.Position = UDim2.new(0.239473686, 0, 0.0217391308, 0)
+MainTAB.Size = UDim2.new(0, 71, 0, 28)
+MainTAB.Font = Enum.Font.Arial
+MainTAB.Text = "Main / ESP"
+MainTAB.TextColor3 = Color3.fromRGB(181, 181, 181)
+MainTAB.TextSize = 14.000
+
+MainTab.Name = "Main-Tab"
+MainTab.Parent = Main
+MainTab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainTab.BackgroundTransparency = 1.000
+MainTab.BorderColor3 = Color3.fromRGB(35, 35, 35)
+MainTab.Position = UDim2.new(0.0526315719, 0, 0.165217385, 0)
+MainTab.Size = UDim2.new(0, 48, 0, 38)
+MainTab.Font = Enum.Font.SourceSans
+MainTab.Text = "Main-Tab"
+MainTab.TextColor3 = Color3.fromRGB(255, 85, 0)
+MainTab.TextSize = 25.000
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextButton.Position = UDim2.new(0.0157894734, 0, 0.330434769, 0)
+TextButton.Size = UDim2.new(0, 62, 0, 32)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "AimBot"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 20.000
+TextButton.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/WSsh5N9Z"))();
+end)
+
+TextButton_2.Parent = Main
+TextButton_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextButton_2.Position = UDim2.new(0.0157894734, 0, 0.508695543, 0)
+TextButton_2.Size = UDim2.new(0, 85, 0, 32)
+TextButton_2.Font = Enum.Font.Cartoon
+TextButton_2.Text = "Silent-Aim"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 20.000
+
+TextButton_3.Parent = Main
+TextButton_3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextButton_3.Position = UDim2.new(0.0157894734, 0, 0.682608545, 0)
+TextButton_3.Size = UDim2.new(0, 62, 0, 32)
+TextButton_3.Font = Enum.Font.Cartoon
+TextButton_3.Text = "ESP"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 20.000
+TextButton.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/crishoux.github.io/master/ESP.txt"))();
+end)
+
+Exit.Name = "Exit"
+Exit.Parent = CritHub
+Exit.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Exit.Position = UDim2.new(0.619615972, 0, 0.363714427, 0)
+Exit.Size = UDim2.new(0, 21, 0, 25)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Exit.TextSize = 25.000
+
+-- Scripts:
+
+local function NTJMMHX_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	--You dont need to delete this text.
+	--PUT INSIDE a BUTTON in StarterGui
+	--Make sure to make a frame for the menu to pop up then go to properties > Visible [Off]
+	script.Parent.MouseButton1Click:Connect (function()
+		script.Parent.Parent.Main.Visible = not script.Parent.Parent.Main.Visible
+	end)
+end
+coroutine.wrap(NTJMMHX_fake_script)()
